@@ -60,6 +60,7 @@ public class HexApplication {
   private static Game initialiseGame(Integer dimension) {
     Player player1 = new HumanPlayer(Flag.RED);
     Player player2 = new CompPlayer(Flag.BLUE, new MiniMaxSolvingStrategy());
+    log.info("You are given Red flag and you have to connect left and right sides.");
     return new Game(
         new ArrayList<Player>(Arrays.asList(player1, player2)),
         player1,
