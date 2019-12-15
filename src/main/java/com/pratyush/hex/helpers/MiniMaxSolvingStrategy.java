@@ -27,7 +27,6 @@ public class MiniMaxSolvingStrategy implements SolvingStrategy{
           }
         }
       }
-    log.info("best score {}", score);
     return bestMove;
 
   }

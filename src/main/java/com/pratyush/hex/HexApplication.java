@@ -14,11 +14,13 @@ import java.util.Arrays;
 import java.util.Scanner;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.boot.WebApplicationType;
+import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.boot.autoconfigure.web.servlet.WebMvcAutoConfiguration;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 
 @Slf4j
-@SpringBootApplication
+@SpringBootApplication(exclude = WebMvcAutoConfiguration.class)
 public class HexApplication {
 
   public static void main(String[] args) {

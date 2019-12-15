@@ -39,7 +39,16 @@ public class Board {
 
   public void paint() {
     int row,col;
+    System.out.print(" ");
+    for(col=0;col<spots.length;col++) {
+      System.out.print(
+          ("|" + col));
+    }
+    System.out.print("|");
+    System.out.println();
+
     for(row=0;row<spots.length;row++) {
+      System.out.print(row);
       for (col = 0; col < spots[row].length; col++) {
         System.out.print(
             ("|" + spots[row][col].getRepresentation()));

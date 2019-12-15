@@ -27,6 +27,8 @@ public class Game {
     this.players = players;
     this.currentTurnHolder = currentTurnHolder;
     this.board = new Board(dimension);
+    log.info("empty board is ");
+    board.paint();
     this.boardSubject = new BoardSubject(players.get(0), players.get(1));
     this.winner = null;
   }
